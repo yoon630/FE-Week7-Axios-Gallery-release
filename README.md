@@ -29,7 +29,8 @@
 
 # 🎯 필수 구현 사항
 
-<img width="100%" alt="image" src="https://github.com/likelion-Inha-12/FE-Week7-Axios-Gallery/assets/129278491/212bdc19-db73-4822-bfc5-d4c5e1f48adc">
+<img width="100%" alt="sample1" src="https://github.com/likelion-Inha-12/FE-Week7-Axios-Gallery-release/assets/129278491/846e02f0-d81d-4545-a7b0-e592fa8efc6d">
+
 
 1. 전체 이미지의 개수를 출력합니다.
 2. 여러 이미지들을 **Grid** 형태로 이미지, 제목, 설명을 함께 표시합니다.
@@ -39,7 +40,8 @@
 6. 삭제 버튼을 클릭하면 해당 댓글을 삭제하고, 댓글 목록을 다시 불러옵니다.
 
 
-<img width="728" alt="image" src="https://github.com/likelion-Inha-12/FE-Week7-Axios-Gallery/assets/129278491/90412f94-a390-42e9-a355-ed0a1b07a287">
+<img width="100%" alt="sample2" src="https://github.com/likelion-Inha-12/FE-Week7-Axios-Gallery-release/assets/129278491/53cb90ee-5787-48bc-9dc8-d225dabf6a25">
+
 
 
 7. 게시글에 달린 총 댓글 개수를 띄워봅시다.
