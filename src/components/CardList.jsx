@@ -1,13 +1,31 @@
-import React from "react";
-import Card from "../components/Card";
-import styled from "styled-components";
+// import React from "react";
+// import styled from "styled-components";
+// // import { Outlet } from "react-router-dom";
+// import Card from "./Card";
 
-const Wrapper = styled.div`
-  // 여기서 3X3 감싸는 스타일 적용하기
-`;
+// const Grid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 16px;
+//   padding: 16px;
+// `;
 
-const CardList = () => {
-  <Card>이안에 여러 카드들 주르륵 나오게,,</Card>;
-};
+// const CardList = ({ images }) => {
+//   console.log("Images prop check in CardList", images);
 
-export default CardList;
+//   return (
+//     <Grid>
+//       {images.map((image) => (
+//         <Card
+//           key={image.id}
+//           img={image.imageURL}
+//           name={image.imageName}
+//           text={image.imageText}
+//           id={image.id}
+//         ></Card>
+//       ))}
+//     </Grid>
+//   );
+// };
+
+// export default CardList;

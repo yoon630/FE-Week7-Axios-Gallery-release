@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "../src/pages/Home";
 import NotFound from "../src/pages/NotFound";
 import Detail from "../src/pages/Detail";
+import CardList from "./components/CardList";
 
 function App() {
   return (
