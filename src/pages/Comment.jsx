@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import React, { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
-// import axios from "axios";
+import React from "react";
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,6 +7,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
+  margin: 5px 0 5px 0;
 `;
 
 const Container = styled.div`
@@ -50,47 +49,29 @@ const DeleteBtn = styled.button`
   justify-content: flex-end;
   width: 60px;
   height: 30px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: small;
   border: none;
   text-align: center;
   background: none;
   margin-left: 5px;
   color: gray;
+
+  &:hover {
+    cursor: pointer;
+    color: #0064ff;
+  }
 `;
 
-const AddComment = styled.input`
-  display: flex;
-  width: 600px;
-  height: 40px;
-  border: none;
-  margin: 5px;
-  padding: 1px;
-  border: 0.5px solid #dcdcdc;
-  border-radius: 10px;
-`;
-
-//삭제하는 버튼은 어케만들지,,,
-
-export default function Comment({ id, text }) {
+export default function Comment({ id, text, onDelete }) {
   return (
     <Wrapper>
-      <AddComment type="text" placeholder="댓글 작성.."></AddComment>
+      {/* <AddComment type="text" placeholder="댓글 작성.."></AddComment> */}
       <Container>
         <CommentId>{id}</CommentId>
         <CommentText>{text}</CommentText>
-        <DeleteBtn>삭제</DeleteBtn>
+        <DeleteBtn onClick={() => onDelete(id)}>삭제</DeleteBtn>
       </Container>
     </Wrapper>
   );
 }
-
-// const Comment= ({ id, text })=> {
-//   return (
-//     <Container>
-//       <></>
-//       <CommentId>{id}</CommentId>
-//       <CommentText>{text}</CommentText>
-//     </Container>
-//   );
-// }
