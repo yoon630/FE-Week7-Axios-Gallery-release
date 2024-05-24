@@ -1,16 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "../src/pages/Home";
-import NotFound from "../src/pages/NotFound";
-import Detail from "../src/pages/Detail";
-import CardList from "./components/CardList";
+import Home from "./pages/Home";
+import Detail from "./pages/Detail";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/detail" element={<Detail />}></Route>
+        <Route path="/detail/:imgId" element={<Detail />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

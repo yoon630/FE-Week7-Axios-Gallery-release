@@ -51,7 +51,14 @@ export default function Card({ img, name, id, text }) {
   const navigate = useNavigate();
 
   return (
-    <Wrapper id={id} onClick={() => navigate(`/detail/${id}`)}>
+    <Wrapper
+      id={id}
+      // onClick={() => navigate(`/detail/${id}`, { state: { img, name, text } })}
+      onClick={() => {
+        console.log("Navigating to detail:", { img, name, text });
+        navigate(`/detail/${id}`, { state: { img, name, text } });
+      }}
+    >
       <ImageBox>
         <Image src={img}></Image>
       </ImageBox>

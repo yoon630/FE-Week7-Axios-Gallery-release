@@ -10,8 +10,8 @@ const Grid = styled.div`
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-rows: repeat(3, 200px);
-  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 230px);
+  grid-template-columns: repeat(3, 220px);
   gap: 16px;
   padding: 15px;
 `;
@@ -31,11 +31,9 @@ const Home = () => {
       });
   }, []);
 
-  console.log("Images state in Home", images);
-
-  const imgId = (e) => {
-    images(e.target.id);
-  };
+  // const imgId = (e) => {
+  //   images(e.target.id);
+  // };
 
   return (
     <>
@@ -48,7 +46,7 @@ const Home = () => {
             name={image.imageName}
             text={image.imageText}
             id={image.id}
-            onClick={(e) => imgId(e)}
+            // onClick={(e) => imgId(e)}
           ></Card>
         ))}
       </Grid>

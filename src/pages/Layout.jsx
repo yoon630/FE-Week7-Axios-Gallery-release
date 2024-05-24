@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
-import img from "../assets/likelion.png";
+import { Outlet } from "react-router-dom";
 
 const BackGround = styled.div`
   width: 100%;
@@ -18,17 +16,15 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
 `;
-const NotFound = () => {
-  // const navigate = useNavigate();
+
+const Layout = () => {
   return (
     <BackGround>
       <Wrapper>
-        <h1>멋쟁이 사자가 당신을 기다리고 있습니다.</h1>
-        <img src={img}></img>
-        <Link to="/"> 홈으로 돌아가기</Link>
+        <Outlet />
       </Wrapper>
     </BackGround>
   );
 };
 
-export default NotFound;
+export default Layout;

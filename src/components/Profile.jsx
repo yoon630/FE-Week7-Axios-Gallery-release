@@ -7,6 +7,9 @@ const Wrapper = styled.div`
   display: flex;
   width: 480px;
   height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 500px;
 `;
 const ProfileImage = styled.img`
   width: 100px;
