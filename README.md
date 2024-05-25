@@ -46,4 +46,4 @@ NotFound부분은 다른 세션에서 했던 과제와 마찬가지로 옳지 �
 
 ## 🚗 동작 영상
 
-<video controls src="동작영상.mp4" title="Title"></video>
+위 파일에 동장영상.gif를 참고해주세요.
