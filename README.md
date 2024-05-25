@@ -36,6 +36,10 @@ addCommentHandler 함수에서 post를 api를 axios로 http://3.36.127.43:8080/$
 그리고 댓글을 작성할 수 있도록 input태그로 AddComment라는 스타일 컴포넌트를 만들고 이때 입력하는 값을 value로 newComment라는 변수에 담았습니다. onChange를 이용해 위에서 만든 setNewComment에 이 value를 넘겨줍니다.
 그리고 최종적으로 게시 버튼을 누르면 적용되도록 NewCommentBtn이라는 스타일 컴포넌트로 만든 button을 onClick하면 addCommentHandler함수를 실행시키도록 했습니다.
 
+## NotFound.jsx
+
+NotFound부분은 다른 세션에서 했던 과제와 마찬가지로 옳지 않은 경로로 갔을 경우 홈으로 돌아가는 버튼과 "멋쟁이 사자가 당신을 기다리고 있습니다." 라는 문구가 출력되도록 했다.
+
 ## 사용한 ❍ API
 
 - **DOCS** : http://3.36.127.43:8080/swagger-ui/#/GalleryController
