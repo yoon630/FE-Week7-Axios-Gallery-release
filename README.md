@@ -45,3 +45,5 @@ NotFound부분은 다른 세션에서 했던 과제와 마찬가지로 옳지 �
 - **DOCS** : http://3.36.127.43:8080/swagger-ui/#/GalleryController
 
 ## 🚗 동작 영상
+
+<video controls src="동작영상.mp4" title="Title"></video>
